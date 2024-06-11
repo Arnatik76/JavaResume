@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" spacing="50.0" style="-fx-background-color: DARKGREEN;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prj.controllers.LoginMenuController">
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <Label text="Welcome to LibraryApp. Please sign in." textFill="WHITE">
+      <font>
+         <Font name="Cascadia Code Regular" size="21.0" />
+      </font></Label>
+   <GridPane alignment="CENTER" maxHeight="720.0" maxWidth="1280.0" minHeight="150.0" minWidth="640.0" prefHeight="150.0" prefWidth="1280.0">
+      <columnConstraints>
+         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="10.0" />
+         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1000.0" minWidth="0.0" percentWidth="0.0" prefWidth="500.0" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <Label text="Login" textFill="WHITE">
+         <font>
+            <Font name="Cascadia Code Regular" size="25.0" />
+         </font></Label>
+      <Label text="Password" textFill="WHITE" GridPane.rowIndex="1">
+         <font>
+            <Font name="Cascadia Mono Regular" size="25.0" />
+         </font></Label>
+      <TextField fx:id="loginTextField" maxHeight="25.0" maxWidth="800.0" minHeight="0.0" minWidth="40.0" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: GREEN; -fx-text-fill: WHITE;" GridPane.columnIndex="1">
+         <font>
+            <Font name="Cascadia Code Regular" size="15.0" />
+         </font></TextField>
+      <PasswordField fx:id="passwordTextField" maxHeight="25.0" maxWidth="800.0" style="-fx-background-color: GREEN; -fx-text-fill: WHITE;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font name="Cascadia Code Regular" size="15.0" />
+         </font></PasswordField>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+   </GridPane>
+   <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0">
+      <Button fx:id="signInButton" mnemonicParsing="false" onAction="#SignIn" style="-fx-background-color: GREEN;"
+              text="Sign in" textFill="WHITE">
+         <font>
+            <Font name="Cascadia Code Regular" size="15.0"/>
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" style="-fx-background-color: GREEN;" text="Doesn't have an account?" textFill="WHITE" onAction="#registration">
+         <font>
+            <Font name="Cascadia Code Regular" size="15.0"/>
+         </font>
+      </Button>
+   </HBox>
+</VBox>
