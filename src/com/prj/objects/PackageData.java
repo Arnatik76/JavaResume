@@ -3,6 +3,16 @@ package com.prj;
 import java.io.Serializable;
 
 public class PackageData implements Serializable {
+    /* 0 - check user password
+     * 1 - add user
+     * 2 - true result
+     * 3 - false result
+     * 4 - send genre list
+     * 5 - check admin password
+
+     * 7 - add book
+     * 8 - delete book */
+
     private int operationType;
     private User user;
     private Book book;
@@ -31,4 +41,3 @@ public class PackageData implements Serializable {
 
     public Book getBook() { return book;}
 }
-
