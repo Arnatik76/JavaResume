@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prj.controllers.MainController">
    <HBox alignment="CENTER" prefHeight="180.0" prefWidth="1280.0" spacing="150.0" style="-fx-background-color: STEELBLUE;">
       <Label text="LibraryApp">
@@ -30,5 +29,10 @@
          </font>
       </Label>
       <ListView fx:id="booksListView" editable="true" fixedCellSize="10.0" prefHeight="441.0" prefWidth="300.0" />
+      <Button mnemonicParsing="false" onAction="#updateBookList" text="Update">
+         <font>
+            <Font name="Cascadia Code Regular" size="15.0" />
+         </font>
+      </Button>
    </VBox>
 </Pane>
